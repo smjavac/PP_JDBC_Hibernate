@@ -20,14 +20,14 @@ public class Util {
         return connection;
     }
 
-//    public static void closeConnection() {
-//        try {
-//            connection.close();
-//            if (connection.isClosed()){
-//                System.out.println("Connection closed");
-//            }
-//        } catch (SQLException e) {
-//            System.out.println("Connection closing error");
-//        }
-//    }
+    public static void closeConnection() {
+        try {
+            connection.close();
+            if (connection.isClosed()){
+                System.out.println("Connection closed");
+            }
+        } catch (SQLException e) {
+            System.out.println("Connection closing error");
+        }
+    }
 }
