@@ -11,6 +11,9 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
 public class UserDaoJDBCImpl implements UserDao {
     private final Connection connection = Util.getConnection();
 
