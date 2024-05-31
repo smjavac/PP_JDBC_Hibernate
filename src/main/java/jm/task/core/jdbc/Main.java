@@ -36,7 +36,8 @@ public class Main {
         userServiceHiberImpl.saveUser("Vasiliy", "Vasiliyev", (byte) 54);
 
         userServiceHiberImpl.removeUserById(1);
-        userServiceHiberImpl.getAllUsers().stream().forEach(System.out::println);         userServiceHiberImpl.cleanUsersTable();
+        userServiceHiberImpl.getAllUsers().stream().forEach(System.out::println);
+        userServiceHiberImpl.cleanUsersTable();
         userServiceHiberImpl.dropUsersTable();
 
     }
